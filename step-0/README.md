@@ -85,3 +85,10 @@ $cargo run
 ```   
 
 This will compile and execute the code!!!
+
+
+5. To release to production
+
+```
+cargo build --release
+```
