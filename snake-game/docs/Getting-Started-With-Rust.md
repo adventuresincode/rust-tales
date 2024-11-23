@@ -14,18 +14,7 @@ rust default nightly OR stable
 1. Create a project folder
 2. Create the main.rs file - this is the entry point
 3. fn 
-for main - fn main(){
- //body   
-}
 
-let for declaring a variable.
-to print - println macro - a macro will be followed by an exclamation mark
-
-for prinmtln - use the template "{}" as the 1st parameter
-to compile - ructc main.rs - results in a binary executable code
-to run - ./main
-
-LLVM is used to convert the rust code to binary.
 
 ----
 ### To create a simple REUST program that prints Hello-World
@@ -83,3 +72,34 @@ This should result in a file called `main` being generated which can be executed
 ```
 ./main
 ```
+-----
+
+## The 'mut' keyword
+By default the variable are immutable 
+To explecity make it mutable, you need to  use the key word `mut`
+
+
+---
+## Cargo
+Cargo is the package manager for Rust. The initial install should have already installed Cargo.   
+The packages in Rust are called `Crates`.   
+
+To start using cargo, initialize it in the source directory using the command:
+```
+cargo init
+```
+
+This should result in the creation of the manfiest file called >Cargo.toml.   
+This is the file that is like `package.json` for node. It contains the list of all the packages that will be used to build and run the application.  
+
+To run the main rust file using cargo, just state:
+```
+cargo build 
+cargo run
+```
+
+This should initially build the file and then run the executable.
+
+
+
+
